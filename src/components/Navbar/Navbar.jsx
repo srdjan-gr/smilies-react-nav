@@ -2,6 +2,8 @@ import React from 'react'
 import './Navbar.css'
 import { IoSearchOutline, IoCartOutline, IoBagOutline, IoEllipseOutline, IoMenuOutline, IoEllipsisVerticalOutline } from 'react-icons/io5'
 
+import { Link } from 'react-router-dom';
+
 let iconsStyle = {
     cursor: 'pointer',
     // transition: 'all 0.2s ease',
@@ -18,14 +20,14 @@ const Navbar = () => {
                         <div className="navbar__left" id="navbar__left">
 
                             <div className="lang-menu">
-                                <li><a class="lang-active">EN</a></li>
+                                <li><a className="lang-active">EN</a></li>
                                 <li><a>SR</a></li>
                             </div>
 
                             <div className='pages-menu'>
-                                <li className="current"><a href="/index.html">Home</a></li>
-                                <li><a href="/pages/contact-pg.html">Contact</a></li>
-                                <li><a href="/pages/about-us.html">About Us</a></li>
+                                <li className="current"><Link to="/">Home</Link></li>
+                                <li><Link to="/Contact">Contact</Link></li>
+                                <li><Link to="/About">About Us</Link></li>
                             </div>
 
                         </div>
@@ -36,7 +38,7 @@ const Navbar = () => {
 
                             <span className='bag__full'> <IoEllipseOutline style={iconsStyle} /></span>
 
-                            <li className="login"><a href="pages/login.html">Log in / Sign In</a></li>
+                            <li className="login"><Link to="/LoginSignein">Log in / Sign In</Link></li>
 
                             <span className="mobile__menu" ><IoEllipsisVerticalOutline style={iconsStyle} /></span>
 
