@@ -34,11 +34,11 @@ const Navbar = () => {
                             <span><IoSearchOutline style={iconsStyle} /></span>
                             <span><IoBagOutline style={iconsStyle} /></span>
 
-                            <li className='bag__full'> <a href="/pages/shoping.html"><IoEllipseOutline /></a></li>
+                            <span className='bag__full'> <IoEllipseOutline style={iconsStyle} /></span>
 
                             <li className="login"><a href="pages/login.html">Log in / Sign In</a></li>
 
-                            <li className='mobile__menu'><IoEllipsisVerticalOutline /></li>
+                            <span className="mobile__menu" ><IoEllipsisVerticalOutline style={iconsStyle} /></span>
 
                         </div>
                     </div>

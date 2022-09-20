@@ -74,7 +74,13 @@ span:hover{
 }
 
 @media  (max-width:768px) {
-    .navbar__left {
+    .navbar__left,
+    .login {
         display: none;
     }
+
+    .mobile__menu {
+        display: flex;
+    }
+    
 }
